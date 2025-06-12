@@ -1,0 +1,134 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+.titre{
+    margin: 40px 10px 30px 10px;
+    color: #f2f2f2;
+}
+
+.temp{
+    margin: 30px 0 10px 0;
+}
+
+.show{
+    background-color: #091436;
+    transition: 2s all;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.contenue{
+    background-color: rgb(255, 255, 255);
+    min-width: 50%;
+    height: 40%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.devise-contenaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    height: 70%;
+}
+
+.monnaie{
+    border: 1px solid black;
+    padding: 5px;
+    width: 90%;
+    border-radius: 10px;
+    min-height: 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.monnaie:hover, .monnaie:focus{
+    border: 2px solid rgb(2, 77, 216);
+    background-color: #0011ff05;
+    transition: 0.5s background-color;
+}
+
+.icon{
+    width: 50px;
+}
+
+.gauche{
+    display: flex;
+    flex-direction: row;
+}
+
+.droite{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 95%;
+    width: 80%;
+}
+
+.inputMonnaie{
+    width: 100%;
+    height: 90%;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 22px;
+    border: none;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+.monnaieSymbole{
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 10px;
+    padding: 0 15px 0 5px;
+    height: 100%;
+    width: 20%;
+    background-color: transparent;
+    
+}
+
+.monnaieSymbole:hover, .monnaie:focus{
+    background-color: #f2f2f2;
+}
+
+.image-monnaie{
+    width: 40px;
+    height: 40px;
+    border-radius: 24px;
+}
+
+.monnaieSymboleText{
+    position: relative;
+    right: 15px;
+    top: 3px;
+}
+
+@media (max-width: 1080px){
+    .contenue{
+        background-color: white;
+        min-width: 70%;
+    }
+}
+
+@media (max-width: 480px){
+    .contenue{
+        background-color: white;
+        min-width: 90%;
+    }
+}
